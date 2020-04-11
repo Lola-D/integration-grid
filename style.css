@@ -1,0 +1,290 @@
+/* VERSION DESKTOP */
+
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    margin: auto;
+    color: #696969;
+}
+
+.menu {
+    background-color: #424242;
+    color: #eee;
+    font-size: 19px;
+}
+
+.menu .nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav,
+.footer {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav {
+    padding: 1em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-sm {
+    padding: 1.5em;
+}
+
+.nav:hover,
+.nav:active {
+    background-color: #e0e0e0;
+    color: #424242
+}
+
+#carousel-element {
+grid-area: header;
+}
+#cards {
+grid-area: main;
+}
+#button-element {
+    grid-area: button;
+}
+#form-element {
+grid-area: sidebar;
+}
+#footer-element {
+grid-area: footer;
+}
+
+.container {
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+
+    grid-template-rows: auto;
+
+    grid-template-areas: 
+        "header header button"
+        "header header sidebar"
+        "main main sidebar"
+        "main main footer";
+}
+
+#title {
+    font-size: 25px;
+}
+
+.carousel {
+    width: 100%;
+    height: 400px;
+    background-color: #bdbdbd;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.carousel-desk {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.circles {
+    text-align: center;
+}
+
+.arrow {
+    font-size: 35px;
+}
+
+.carousel-title {
+    font-size: 25px;
+}
+
+.carousel-paragraph {
+    font-size: 18px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+#fellows {
+    padding: 40px 8px;
+    font-size: 25px;
+}
+
+em {
+    font-size: 19px;
+    font-style: normal;
+}
+
+#wanted {
+    display: flex;
+}
+
+#cards {
+    padding: 0 10px;
+}
+
+.image-card {
+    background-color: #e0e0e0;
+    width: 90%;
+    height: 250px;
+    margin: 5% auto;
+}
+
+.dead {
+    background-color: gray;
+}
+
+.reward {
+    width: 70%;
+    background-color: gray;
+    color: white;
+    position: relative;
+    top: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+article {
+    width: 100%;
+    margin: 8px 10px;
+    border-radius: 3px;
+    border: solid 1px gray;
+}
+
+.card-text {
+    margin: 20px;
+}
+
+.card-title {
+    font-size: 20px;
+    margin: 0 0 5px 0;
+}
+
+#button-element {margin: 20px auto;}
+
+#contact, #need {
+    font-size: 25px;
+}
+
+#form-element {
+    background-color: #e0e0e0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 30px auto 0;
+}
+
+input,
+select {
+    height: 30px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: solid 1px;
+}
+
+#contact {
+    margin: 0 0 20px 0;
+}
+
+#email,
+#home {
+    font-size: 20px;
+}
+
+textarea {
+    height: 140px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: solid 1px black;
+}
+
+button {
+    width: 330px;
+    height: 50px;
+    align-self: flex-end;
+    background-color: #6b6b6b;
+    color: white;
+    margin: 20px auto;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+footer {
+    background-color: #424242;
+    color: #eee;
+    padding: 20px;
+}
+
+#second {
+    margin-left: 100px;
+}
+
+.footer {
+    padding: 10px 0;
+}
+
+.social {
+    margin-left: auto;
+    align-self: center;
+    margin-right: 100px;
+    font-size: 20px;
+}
+
+.infos {
+    display: flex;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 850px) {
+    .container {
+        display: grid;
+    
+        grid-template-columns: auto;
+    
+        grid-template-rows: auto;
+    
+        grid-template-areas: 
+            "button"
+            "header"
+            "main"
+            "sidebar"
+            "footer"
+    }
+    
+    #wanted {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+        margin: 8px 0;
+    }
+
+    #form-element {
+        padding-bottom: 25px;
+    }
+
+    .arrow {
+        color: #bdbdbd;
+    }
+
+}
