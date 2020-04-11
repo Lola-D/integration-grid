@@ -95,7 +95,6 @@ grid-area: footer;
 
 .carousel-desk {
     display: flex;
-    justify-content: space-around;
     align-self: center;
 }
 
@@ -105,6 +104,7 @@ grid-area: footer;
 
 .arrow {
     font-size: 35px;
+    margin: 0 100px;
 }
 
 .carousel-title {
@@ -280,6 +280,7 @@ footer {
 
     .arrow {
         color: #bdbdbd;
+        margin: 0;
     }
 
 }
